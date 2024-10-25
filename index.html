@@ -9,37 +9,43 @@
 </head>
 
 <body>
-    <p class="title">Rock Paper Scissors</p>
-    <button onclick="
+    <div class="gette">
+        <p class="title">Rock Paper Scissors</p>
+        <button onclick="
         playGame('rock')
-        " class="move-button"><img src="rock-emoji.png" alt="" class="move-icon"></button>
+        " class="move-button"><img src="images/rock-emoji.png" alt="" class="move-icon"></button>
 
-    <button onclick="
+        <button onclick="
                playGame('paper')
-        " class="move-button"><img src="paper-emoji.png" alt="" class="move-icon"></button>
+        " class="move-button"><img src="images/paper-emoji.png" alt="" class="move-icon"></button>
 
-    <button onclick="
+        <button onclick="
         playGame('scissors')
-        " class="move-button"><img src="scissors-emoji.png" alt="" class="move-icon"></button>
+        " class="move-button"><img src="images/scissors-emoji.png" alt="" class="move-icon"></button>
 
-    <p class="js-result result"></p>
-    <p class="js-moves"></p>
-    <P class="js-score score"></P>
+        <div class="gette2">
+            <p class="js-result result"></p>
+            <p class="js-moves"></p>
+            <P class="js-score score"></P>
 
-    <button onclick="
-        score.wins = 0;
-        score.losses = 0;
-        score.ties = 0;
-        localStorage.removeItem('score')
-        updateScoreElemet();
-        " class="reset-score-button">Reset Score</button>
+            <button onclick="
+            score.wins = 0;
+            score.losses = 0;
+            score.ties = 0;
+            localStorage.removeItem('score')
+            updateScoreElemet();
+            " class="reset-score-button">Reset Score</button>
 
-        <button class="auto-play-button" onclick="
-        autoPlay();
-        ">Auto Play</button>
-    <br>
-    <br>
-    <br>
+            <button class="auto-play-button" onclick="
+            autoPlay();
+            ">Auto Play</button>
+            </div>
+            <br>
+            <br>
+            <br>
+          <p>From <span>Bridget</span> to <span>you</span>🧡</p>
+    </div>
+
     <script src="12-rock-paper-scissors.js"></script>
 </body>
 
